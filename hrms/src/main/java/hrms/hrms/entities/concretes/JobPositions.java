@@ -23,14 +23,14 @@ public class JobPositions {
 	private int id;
 
 	@Column(name = "job_title")
-	private String position;
+	private String jobTitle;
 	
 	@Column(name = "created_date")
 	private String createdDate;
 	
 	@Column(name = "is_active" , columnDefinition = "boolean default true")
-	private String isActive;
+	private boolean isActive = true;
 	
 	@Column(name = "is_deleted" , columnDefinition = "boolean default false")
-	private String isDeleted;
+	private boolean isDeleted = false;
 }
